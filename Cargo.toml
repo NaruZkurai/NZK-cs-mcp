@@ -1,0 +1,18 @@
+# NZK-cs-mcp — the csgraph engine + `csgraph --mcp` stdio server.
+# Extracted from the GUI cs viewer (https://github.com/NaruZkurai/nzk-cs-viewer),
+# which consumes this engine as `csgraph-core`.
+[workspace]
+resolver = "2"
+members = ["core"]
+
+[workspace.package]
+version = "2.0.0"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/NaruZkurai/NZK-cs-mcp"
+
+[profile.release]
+opt-level = "s"
+lto = "thin"
+codegen-units = 1
+strip = true
