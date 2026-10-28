@@ -1,7 +1,7 @@
 # NZK-cs-mcp
 
-The **csgraph** engine and its stdio MCP server, extracted from the
-[GUI cs viewer](https://github.com/NaruZkurai/nzk-cs-viewer).
+The **v3 csgraph** engine and its stdio MCP server, mirroring the engine used by
+the native [cs viewer v3](https://github.com/NaruZkurai/nzk-cs-viewer) (`3.0.0-beta.9`).
 
 `core/` is `csgraph-core` — lexer, parser, relation graph, document synthesis,
 reorganisation, dedupe and the `/api/*` surface — plus the `csgraph` CLI, whose
@@ -26,8 +26,8 @@ path, or unique basename). `tools/list` currently advertises 42 tools.
 
 ## Related repositories
 
-- **GUI cs viewer:** <https://github.com/NaruZkurai/nzk-cs-viewer> — the Tauri
-  host + frontend that uses this engine.
+- **GUI cs viewer:** <https://github.com/NaruZkurai/nzk-cs-viewer> — the native
+  v3 host (winit + wgpu + egui) that uses this engine.
 - **DSH plugin:** <https://github.com/NaruZkurai/nzk-cs-mcp-dsh-plugin> — the
   DeepSeek Harness bundle that registers this server as `mcp__csgraph__*`.
 
